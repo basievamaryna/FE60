@@ -1,0 +1,14 @@
+User-agent: * - доступ открыт для всех поисковой
+Allow: /допускаем сканирование страниц или папок файлов
+Disallow:  запретить сканирование страниц или папок файлов
+Disallow: /admin/
+Sitemap: https://site.com.ua/sitemap_html.xml
+Sitemap: https://site.com.ua/sitemap_images.xml
+Sitemap: https://site.com.ua/sitemap_video.xml
+
+
+
+User-agent: Yandex - доступ открыт только для Yandax
+Host: site.com.ua
+
+User-agent: Googlebot - только Google
