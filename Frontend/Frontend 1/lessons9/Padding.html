@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Padding</title>
+</head>
+
+<style>
+	.parent_box{
+		width: 900px;
+		margin: 0 auto;
+	}
+	.box{
+		width: 100px;
+		height: 100px;
+		background:#1BBCE4;
+		margin-bottom: 30px;
+	}
+	.box1{
+		padding-left: 20px;
+	}
+	.box2{
+		padding-right: 20px;
+	}
+	.box3{
+		padding-bottom: 20px;
+	}
+	.box4{
+		padding-top: 20px;
+	}
+	.box5{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.box6{
+		padding: 20px;
+	}
+	.box7{
+		padding: 20px 0;
+	}
+	.box8{
+		padding: 0 20px;
+	}
+	.box8{
+		padding: 20px 20px 20px 20px;
+	}
+</style>
+<body>
+	<div class="parent_box">
+		<div class="box box1"></div>
+		<div class="box box2"></div>
+		<div class="box box3"></div>
+		<div class="box box4"></div>
+		<div class="box box5"></div>
+		<div class="box box6"></div>
+		<div class="box box7"></div>
+		<div class="box box8"></div>
+		<div class="box box9"></div>
+	</div>
+	<style>
+		.nav ul.menu>li>a{
+			font-size: 14px;
+		}
+		.nav ul.menu>li>ul.sub-menu>li>a{
+			font-size:20px;
+		}
+	</style>
+	
+	<nav class="nav">
+		<ul class="menu">
+			<li class="item"><a href="#" class="link-item curent">Home</a></li>
+			<li class="item"><a href="#" class="link-item ">Catalog</a>
+				 <ul class="sub-menu">
+					  <li class="item"><a class="link-item">link1</a></li>
+					 <li class="item"><a class="link-item">link2</a>
+						 <ul class="sub-menu">
+					  <li class="item"><a class="link-item">link1</a></li>
+					 <li class="item"><a class="link-item">link2</a></li>
+					 <li class="item"><a class="link-item">link3</a></li>
+					 <li class="item"><a class="link-item">link4</a></li>
+				 </ul>
+					 </li>
+					 <li class="item"><a class="link-item">link3</a></li>
+					 <li class="item"><a class="link-item">link4</a></li>
+				 </ul>
+			</li>
+			<li class="item"><a href="#" class="link-item ">Home3</a></li>
+			<li class="item"><a href="#" class="link-item ">Home4</a></li>
+			<li class="item"><a href="#" class="link-item ">Home5</a></li>
+		</ul>
+	
+	</nav>
+</body>
+</html>
