@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Display</title>
+</head>
+
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.block{
+		display:block;
+	}
+	.block div,
+	.block span{
+		background: #ccc;
+	
+	}
+	.block span{
+		display: block;
+		width: 100px;
+		height: 100px;
+		margin: 5px;
+	}
+	.block div,
+	.inline-block div{
+		width: 100px;
+		height: 100px;
+		margin: 5px;
+	}
+	.inline{
+		border: 2px dotted #4D0809;
+	}
+	.inline div{
+		background: #232A50;
+		display: inline;
+		border: 1px solid #000;
+		font-size: 30px;
+	}
+	.inline-block div{
+		display: inline-block;
+		background: #1D729A;
+
+	}
+	.display_none{
+		display: none;
+	}
+	.Visiblity_hidden{
+		visibility: hidden;
+	}
+	
+</style>
+	
+	
+<body>
+	<div class="parent">
+		 <h2>Block</h2>
+		<div class="block">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<h2>inline</h2>
+		<div class="inline">
+			<div>Some text</div>
+			<div>Some text</div>
+			<div>Some text</div>
+		</div>
+		<h2>inline-block</h2>
+		<div class="inline-block">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<h2>Visiblity</h2>
+		<div class="block">
+			<div></div>
+			<div class="display_none">Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar</div>
+			<div></div>
+			<div></div>
+			<div class="Visiblity_hidden">Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar</div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+</body>
+</html>
