@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>site</title>
+	<link rel="stylesheet" type="text/css" href="vendore/OwlCarousel/dist/assets/owl.carousel.min.css" />
+	<link rel="stylesheet" type="text/css" href="vendore/OwlCarousel/dist/assets/owl.theme.default.min.css" />
+	<link rel="stylesheet" type="text/css" href="vendore/fontawesome/css/all.min.css" />
+	<script type="text/javascript" src="js/jquery-3.0.0.js"></script> 
+	<!--В первую очередь подключаем библиотеку-->
+	<script type="text/javascript" src="vendore/OwlCarousel/dist/owl.carousel.min.js"></script> 
+	<!--Потом плагин-->
+	<script type="text/javascript" src="js/customs.js"></script> 
+	<!--Третью потому что прописываем иницилизацию-->
+</head>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	
+	}
+	body,
+	html{
+		height: 100%;
+	}
+	.for_page{
+		position: relative;
+		min-height: 100%;
+		
+	}
+	.page{
+		padding-bottom: 116px;
+	}
+	body{
+		color:#333;
+		font-size: 14px;
+		font-family: 'Arial';
+	}
+	img{
+		max-width: 100%;
+		width: auto;
+		height: auto;
+		box-sizing: border-box;
+	}
+	p{
+		margin-bottom: 20px;
+	}
+	.clear{
+		clear:both;
+	}
+	.container{
+		width:1170px;
+		margin: 0 auto;
+	}
+	.header{
+		background: #ccc;
+		padding-top: 20px;
+	}
+	.logo{
+		float: left;
+		width: 200px;
+	}
+	.slogon{
+		float: left;
+		width: 400px;
+		text-align: center;
+		font-weight: bold;
+		margin-top: 11px;
+	}
+	.header-contact{
+		float: right;
+	}
+	.header-contact a{
+		display: block;
+		text-decoration: none;
+		line-height: 19px;
+		color: #0f428e;
+		font-weight: bold;
+
+	}
+	.header-contact a:hover{
+		text-decoration: underline;
+
+	}
+	.nav{
+		background: #02175C;
+		margin-top: 20px;
+	}
+	.nav ul.menu{
+		list-style: none;
+	}
+	.nav ul.menu li{
+		display: inline-block;
+		position: relative;
+	}
+	.nav ul.menu li a{
+		color: #fff;
+		text-decoration: none;
+		padding: 15px 20px;
+		display: inline-block;
+		font-size: 15px;
+	}
+	.nav ul.menu li a:hover{
+		background:#0E8390;
+	}
+	.nav ul.menu li ul.sub-menu{
+		list-style: none;
+		position: absolute;
+		left: 0;
+		top: 45px;
+		background: #067162;
+		width: 200px;
+		padding: 10px 0;
+	    display: none;
+		z-index: 10;
+	}
+	.nav ul.menu li ul.sub-menu li a{
+		padding: 3px 20px;
+		display: block;
+	}
+	.nav ul.menu li ul.sub-menu li{
+		display: block;
+	}
+	.nav ul.menu li:nth-child(5):hover ul.sub-menu{
+		display: block;
+	
+	}
+	.slide1{
+		background: url(img/images1.jpeg) no-repeat;
+		background-size: cover;
+		padding: 200px 0;
+		background-position: center center;
+	}
+	.slide2{
+		background: url(img/images2.jpeg) no-repeat;
+		background-size: cover;
+		padding: 200px 0;
+		background-position: center center;
+	}
+	.slide3{
+		background: url(img/images3.jpeg) no-repeat;
+		background-size: cover;
+		padding: 200px 0;
+		background-position: center center;
+	}
+	.slider{
+		overflow: hidden;
+	
+	}
+	#carousel-main .owl-item .item h2{
+		font-size: 50px;
+		color: #333;
+		margin-bottom: 10px;
+	}
+	#carousel-main .owl-item .item p{
+		font-size: 20px;
+		color: #333;
+	}
+	.slide{
+		background: rgb(255,255,255, 0.6);    
+		padding: 20px;
+		width: 604px;
+	}
+	#carousel-main .owl-nav .owl-prev{
+			position: absolute;
+			left: 20px;
+			bottom: 50%;
+	}
+	#carousel-main .owl-nav .owl-prev:hover{
+		background: none;
+		opacity: 0.6;
+	}
+	#carousel-main .owl-nav .owl-next{
+			position: absolute;
+			right: 20px;
+			bottom: 50%;
+	}
+	#carousel-main .owl-nav .owl-next:hover{
+		background: none;
+		opacity: 0.6;
+	}
+	#carousel-main .owl-nav .owl-next i,
+	#carousel-main .owl-nav .owl-prev i{
+		font-size: 40px;
+		color: #fff;
+	}
+	.sidebar{
+		width: 400px;
+		float: left;
+		background:#297AF4;
+		padding: 20px;
+		box-sizing: border-box;
+	
+	}
+	.aside{
+		width: 770px;
+		float: left;
+		box-sizing: border-box;
+		padding-left: 30px;
+		font-size: 15px;
+	}
+	.footer{
+		background: #040438;
+		color: #fff;
+		padding: 50px 0;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		
+	}
+</style>
+<body>
+	<div class="for_page">
+		<div class="page">
+			 <header class="header" id="header">
+				  <div class="container">
+					  <a href="/" class="logo">
+						  <img src="img/logo.png" alt="Main Academy" />
+					  </a>
+					  <div class="slogon">Первая и крупнейшая компания сертифицированных специалистов для IT-компаний</div>
+					  <div class="header-contact">
+						  <a href="tel:+380987674645">(098) 767 46 45</a>
+						  <a href="tel:+380507866745">(050) 786 67 45</a>
+						  <a href="mailto:mainacademy@info">mainacademy@info</a>
+					  </div>
+					  <div class="clear"></div>
+				 </div>
+				 <nav class="nav">
+					<div class="container">
+					 <ul class="menu">
+						 <li class="item curent-item"><a href="/" class="link-item">Главная</a></li>
+						 <li class="item"><a href="#" class="link-item">Курсы</a></li>
+						 <li class="item"><a href="#" class="link-item">Карьера</a></li>
+						 <li class="item"><a href="#" class="link-item">Тесты</a></li>
+						 <li class="item"><a href="#" class="link-item">Блог</a>
+							 <ul class="sub-menu">
+								 <li class="child-item"><a href="#" class="link-item">полезная информация</a></li>
+								 <li class="child-item"><a href="#" class="link-item">Наш Блог</a></li>
+								 <li class="child-item"><a href="#" class="link-item">Актуальная информация</a></li>
+							 </ul>
+						 </li>
+						 <li class="item"><a href="#" class="link-item">Контакты</a></li>
+					 </ul>
+				   </div>
+				 </nav>
+			</header>
+			<section class="slider">
+				<div class="owl-carousel owl-theme" id="carousel-main">
+						<div class="item slide1">
+							<div class="container">
+							  <div class="slide">
+								<h2>Lorem ipsum1</h2>
+								<p>Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar</p>
+							  </div>
+							</div>
+						</div>
+						<div class="item slide2">
+						  <div class="container">
+							  <div class="slide">
+								<h2>Lorem ipsum2</h2>
+								<p>Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar</p>
+							  </div>
+						  </div>
+						</div>
+						<div class="item slide3">
+						  <div class="container">
+							<div class="slide">
+								<h2>Lorem ipsum3</h2>
+								<p>Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar</p>
+							  </div>
+						   </div>
+						</div>
+				</div>
+			</section>
+			
+			<div class="container">
+				<sidebar class="sidebar">
+						<ul class="sidebar_menu">
+							<li class="item"><a href="#" class="link_item">Главная</a></li>
+							<li class="item"><a href="#" class="link_item">О нас</a></li>
+							<li class="item"><a href="#" class="link_item">Курсы</a></li>
+							<li class="item"><a href="#" class="link_item">Блог</a></li>
+							<li class="item"><a href="#" class="link_item">Контакты</a></li>
+						</ul>
+				</sidebar>
+				<aside class="aside">
+					<p>Допустим, вы хотите арендовать квартиру: у вас есть компьютер с выходом в Интернет, вы знаете адрес другого, более мощного компьютера, который хранит огромное множество объявлений. Если представить, что привычных сайтов не существует и вы не можете, например, посмотреть объявления на карте, отфильтровать ненужные, заполнив удобную форму, вам придётся самим составлять сетевой запрос и разбираться в том, как и куда отправлять данные.</p>
+
+<p>К счастью, инженеры придумали браузеры, а веб-технологии развиваются, и вам достаточно лишь воспользоваться удобным интерфейсом, который предоставляют разработчики разных компаний. Осталось сделать пару кликов, и нужная информация найдена.</p>
+
+<p>Фронтенд-разработчиками называют программистов, которые отвечают за создание такой внешней стороны (англ. front end) веб-сайтов. Это клиентская часть сайта, с которой пользователь непосредственно взаимодействует на своем компьютере или телефоне (клиенте).</p>
+
+<p>Многим известно, что сайты включают в себя разметку и стили, которые необходимы, чтобы обеспечить понятную структуру страницы и дизайн, однако фронтенд-разработка этим не ограничивается. Большинство сайтов, которыми мы постоянно пользуемся, это полноценные веб-приложения: почта, онлайн-банк, онлайн-кинотеатры, редакторы фото, заметки. Чтобы такие приложения работали, фронтенд-разработчики добавляют программный код, который выполняется в браузере, реализует нужную функциональность и, при необходимости, взаимодействует с сервером, динамически получая нужную информацию.</p>
+
+
+				</aside>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+					Text
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
