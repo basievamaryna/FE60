@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>table</title>
+</head>
+<style>
+	.table_main,
+	th,
+	td{
+		border: 1px solid #000;
+	}
+	table.table_main{
+		border-collapse: collapse;
+		
+	}
+	table.table_main tr td{
+		height: 50px;
+		vertical-align: bottom;
+	}
+	table.table_main tr:hover{
+		background: #b16969;
+	}
+	/*table.table_main tr:nth-child(even) не четные и  odd не четные */
+	table.table_main tr:nth-child(odd){
+		background: #413E3E;
+	}
+</style>
+<body>
+	<table class="table_main">
+		 <thead>
+		 	<h2>Table title</h2>
+		 </thead>
+		 <tbody>
+			  <tr>
+				   <th>First column</th>
+				   <th>Second column</th>
+				   <th>Five row th</th>
+			 </tr>
+			 <tr>
+				  <td>Row1, cell1</td>
+				  <td>Row1, cell2</td>
+				 <td>Row1, cell3</td>
+			 </tr>
+			  <tr>
+				  <td>Row1, cell1</td>
+				  <td>Row1, cell2</td>
+				 <td>Row1, cell3</td>
+			 </tr>
+			  <tr>
+				  <td>Row1, cell1</td>
+				  <td>Row1, cell2</td>
+				 <td>Row1, cell3</td>
+			 </tr>
+			  <tr>
+				  <td>Row1, cell1</td>
+				  <td>Row1, cell2</td>
+				 <td>Row1, cell3</td>
+			 </tr>
+			  <tr>
+				  <td>Row1, cell1</td>
+				  <td>Row1, cell2</td>
+				 <td>Row1, cell3</td>
+			 </tr>
+		 </tbody>
+		 <tfoot>
+			   <tr>
+				  <td>Row1, cell1</td>
+				  <td>Row1, cell2</td>
+				 <td>Row1, cell3</td>
+			 </tr>
+		 </tfoot>
+	</table>
+</body>
+</html>
