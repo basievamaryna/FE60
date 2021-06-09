@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>gradient</title>
+</head>
+<style>
+	.grad1_linenuy{
+		height: 200px;
+		/*background: red;*/
+		margin-bottom: 20px;
+		background: linear-gradient(to right, #E90609, #E7D517);
+	}
+	.grad2_linenuy{
+		height: 200px;
+		margin-bottom: 20px;
+		background: linear-gradient(to bottom, #E90609, #E7D517);
+	}
+	.grad3_linenuy{
+		height: 200px;
+		margin-bottom: 20px;
+		background: linear-gradient(-90deg, #E90609, #E7D517);
+	}
+	.grad4_linenuy{
+		height: 200px;
+		margin-bottom: 20px;
+		background: linear-gradient(#E90609, #E7D517, #24A930);
+	}
+	.grad5_linenuy{
+		height: 200px;
+		margin-bottom: 20px;
+		background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+	}
+	.grad6_linenuy{
+		height: 200px;
+		margin-bottom: 20px;
+		background: linear-gradient(to right, rgba(285,0,0,0), rgba(255,0,0,1));
+	}
+	.grad7_linenuy{
+		height: 200px;
+		margin-bottom: 20px;
+		background: linear-gradient(red, green 100%, yellow 20%);
+	}
+	.radial1{
+		height: 200px;
+		width: 200px;
+		margin-bottom: 20px;
+		background: radial-gradient(yellow, red, green);
+	}	
+	.radial2{
+		height: 200px;
+		width: 200px;
+		margin-bottom: 20px;
+		background: radial-gradient(red 5%, yellow 15%, green 60%);
+	}
+	.radial3{
+		height: 200px;
+		width: 200px;
+		margin-bottom: 20px;
+		background: radial-gradient(circle, red, yellow, green);
+	}
+	.radial4{
+		height: 200px;
+		width: 200px;
+		margin-bottom: 20px;
+		background: radial-gradient(closest-side at 60% 55%, red, yellow, green);
+	}
+	.radial5{
+		height: 200px;
+		width: 200px;
+		margin-bottom: 20px;
+		background: radial-gradient(farthest-side at 60% 55%, red, yellow, green);
+	}
+	.radial6{
+		height: 200px;
+		width: 200px;
+		margin-bottom: 20px;
+		background: radial-gradient(closest-corner at 60% 55%, red, yellow, green);
+	}
+	.radial7{
+		height: 200px;
+		width: 200px;
+		margin-bottom: 20px;
+		background: radial-gradient(farthest-corner at 60% 55%, red, yellow, green);
+	}
+	.radial8{
+		height: 200px;
+		width: 200px;
+		margin-bottom: 20px;
+		background: repeating-radial-gradient(red, yellow 10%, green 15%);
+	}
+</style>
+<body>
+	<h2>Линейный градиент</h2>
+	<div class="grad1_linenuy"></div>
+	<div class="grad2_linenuy"></div>
+	<div class="grad3_linenuy"></div>
+	<div class="grad4_linenuy"></div>
+	<div class="grad5_linenuy"></div>
+	<div class="grad6_linenuy"></div>
+	<div class="grad7_linenuy"></div>
+	<h2>Радиальный градиент</h2>
+	<div class="radial1"></div>
+	<div class="radial2"></div>
+	<div class="radial3"></div>
+	<h2>Использование ключение слов разного размера радиального градиента</h2>
+	<div class="radial4"></div>
+	<div class="radial5"></div>
+	<div class="radial6"></div>
+	<div class="radial7"></div>
+	<div class="radial8"></div>
+</body>
+</html>
