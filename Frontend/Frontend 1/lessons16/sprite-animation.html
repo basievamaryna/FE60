@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>sprite animation</title>
+</head>
+<style>
+	.sprite {
+    display:inline-block; overflow:hidden; background-repeat:no-repeat;
+    background-image:url("img/spritesheet.png");
+}
+.download {
+    width:80px; height:32px; background-position: -0px -273px
+}    
+.download:hover {
+    width:80px; height:32px; background-position: -80px -273px
+}
+.think {
+    width:123px; height:273px; background-position: -0px -0px
+}
+.think:hover {
+    width:123px; height:273px; background-position: -123px -0px
+}
+	
+	
+	
+@-webkit-keyframes walk {
+    from { background-position: 0px; }
+    to { background-position: -1472px; } 
+}
+
+@-moz-keyframes walk {
+    from { background-position: 0px; }
+    to { background-position: -1472px; } 
+}
+
+@-o-keyframes walk {
+    from { background-position: 0px; }
+    to { background-position: -1472px; }
+}
+
+@keyframes walk {
+    from { background-position: 0px; }
+    to { background-position: -1472px; } 
+}
+
+.capguy {
+    width: 184px; height: 325px; 
+    background-image: url("img/capguy-walk.png"); 
+    margin: 0 auto;    
+    -webkit-animation: walk 1s steps(8) infinite; 
+    -moz-animation: walk 1s steps(8) infinite;
+    -o-animation: walk 1s steps(8) infinite;
+    animation: walk 1s steps(8) infinite;
+}
+</style>
+<body>
+	<div class="sprite think localTopSpacing"></div>
+	<div class="capguy"></div>
+</body>
+</html>
