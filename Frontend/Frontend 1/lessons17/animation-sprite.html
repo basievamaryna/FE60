@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>animation sprite</title>
+</head>
+<style>
+	.sprite{
+		display: inline-block;
+		overflow: hidden;
+		background: url("img/spritesheet.png") no-repeat;
+	}
+	.think{
+		width: 123px;
+		height: 273px;
+		background-position: 0px 0px;
+	}
+	.think:hover{
+		width: 123px;
+		height: 273px;
+		background-position: -123px 0px;
+	}
+	.capguy{
+		width: 184px;
+		height: 325px;
+		background-image: url("img/capguy-walk.png");
+		margin: 0 auto;
+		-webkit-animation: capguy 1s steps(8) infinite;
+		-moz-animation: capguy 1s steps(8) infinite;
+	    -o-animation: capguy 1s steps(8) infinite;
+		animation: capguy 1s steps(8) infinite;
+			
+	}
+	
+	@-webkit-keyframes capguy{
+		from{
+			background-position: 0px;
+		}
+		to{
+			background-position: -1472px;
+		}
+	}
+	@-moz-keyframes capguy{
+		from{
+			background-position: 0px;
+		}
+		to{
+			background-position: -1472px;
+		}
+	}
+	@-o-keyframes capguy{
+		from{
+			background-position: 0px;
+		}
+		to{
+			background-position: -1472px;
+		}
+	}
+	@keyframes capguy{
+		from{
+			background-position: 0px;
+		}
+		to{
+			background-position: -1472px;
+		}
+	}
+	
+	.spriteAnime{
+		background-image: url("img/capguy-walk.png");
+		height:325px;
+		width: calc(1472px/8);
+		animation-name:man;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+		animation-timing-function: steps(8);
+	}
+	@keyframes man{
+		from{
+			background-position: 0;
+		}
+		to{
+			background-position: -1472px;
+		}
+	}
+</style>
+<body>
+	<div class="sprite think localTopSpacing"></div>
+	<div class="capguy"></div>
+	<div class="spriteAnime"></div>
+</body>
+</html>
