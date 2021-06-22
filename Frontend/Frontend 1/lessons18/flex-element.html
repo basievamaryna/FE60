@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>flex-element</title>
+</head>
+	<style>
+/*
+order
+flex-grow
+flex-shrink
+flex-basis
+flex - является сокращеным свойством для, flex-grow, flex-shrink, flex-basis
+align-self
+	*/
+		.flex-container-order,
+		.flex-container-grow,
+		.flex-container-srink,
+		.flex-container-basis,
+		.flex-container-flex,
+		.flex-container-align-self{
+			background:#1E4CE2;
+			margin-bottom: 20px;
+			width: 700px;
+			height: 200px;
+			display: flex;
+		}
+		
+		.flex-container-order > div,
+		.flex-container-grow > div,
+		.flex-container-srink > div,
+		.flex-container-basis > div,
+		.flex-container-flex > div,
+		.flex-container-align-self > div{
+			background: #f1f1f1;
+			width: 100px;
+			margin: 10px;
+			text-align: center;
+			line-height: 75px;
+			font-size: 30px;
+		}
+		.flex-container-order div:first-child{
+			order: 3;
+		}
+		.flex-container-order div:nth-child(2){
+			order: 2;
+		}
+		.flex-container-order div:nth-child(3){
+			order: 4;
+		}
+		.flex-container-order div:last-child{
+			order: 1;
+		}
+		
+		
+		.flex-container-grow div:first-child{
+			flex-grow: 1;
+		}
+		.flex-container-grow div:nth-child(2){
+			flex-grow: 1;
+		}
+		.flex-container-grow div:nth-child(3){
+			flex-grow: 8;
+		}
+		.flex-container-grow div:nth-child(4){
+			flex-grow: 1;
+		}
+		
+		
+		.flex-container-srink div:nth-child(3){
+			flex-shrink:0;
+		}
+		.flex-container-basis div:nth-child(3){
+			flex-basis: 200px;
+		}
+		.flex-container-flex div:nth-child(3){
+			flex:0 0 200px;
+		}
+		.flex-container-align-self div{
+			align-self: center;
+		}
+</style>
+<body>
+	<!--order-->
+	<div class="flex-container-order">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+	</div>
+   <!--order-->
+	
+	
+	<!--grow-->
+	<div class="flex-container-grow">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+	</div>
+   <!--grow-->
+	
+	
+	<!--srink-->
+	<div class="flex-container-srink">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>
+		<div>10</div>
+	</div>
+   <!--srink-->
+	
+	
+	<!--basis-->
+	<div class="flex-container-basis">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+	</div>
+   <!--grow-->
+	
+	<!--flex-->
+	<div class="flex-container-flex">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+	</div>
+   <!--flex-->
+	
+	<!--align-self-->
+	<div class="flex-container-align-self">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+	</div>
+   <!--align-self-->
+</body>
+</html>
