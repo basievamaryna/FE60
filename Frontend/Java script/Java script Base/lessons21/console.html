@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>console</title>
+</head>
+<script>
+	console.log("Hello World"); //строковые можно кавычки использовать (''); ("");
+	console.log(2*2);//числовые значение без кавычек
+	console.dir(document.location);//console.dir(object);
+	console.info('console.info пример');//console.info(obj1 [, obj2, ..., objN]);
+	
+	function test(x, y){
+		console.info('test('+x+','+y+')');
+		return x+y;
+	}
+	test(1,1);
+	
+	console.assert('assert');//console.info(assertion,obj1 [, obj2, ..., objN]); 
+	console.log(false, 'test assert(false, "")');
+	console.warn('Warnings');
+	console.error('This is the error');
+	
+</script>
+<body>
+</body>
+</html>
