@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Operators binary unary</title>
+</head>
+<script>
+	let x = 2;
+	    x = -x; // унарный - меняет число на отрицательное число
+	console.log(x);// -2
+	
+	let y = 3, 
+		t = 2;
+	console.log(y-t); // вычисление - (бинарный), если просиходит любое матиматическое изчесление переменные становяться операндами
+	
+	//Взятие Остатка
+	console.log(5 % 2);// 1
+	
+	//Возведение в степень 
+	console.log(2 ** 2);//4
+	console.log(2 ** 3);//8 (2*2*2, 3 раза)
+	
+	//Сложение строк при помощи бинарного +
+	let str = "Maryna" + " " + "Basieva";
+	console.log(str);
+	
+	console.log('1' + 2);// 12
+	console.log(2 + '1');// 21
+	console.log(2+2+"1"); //4+"1" = 41
+    console.log("1"+2+2); //4+"1" = 41
+	
+	
+	//Унарный плюс +
+	let qwert = 1;
+	console.log(+qwert);//унарный плюс не работает с числами
+	
+	console.log(+true); //1
+	console.log(+"");//0
+	
+	let fruit = "2";
+	let fruit2 = "3";
+	console.log(+fruit + +fruit2);//5
+	
+	
+	//Инкремент ++ увеличивает переменную на 1
+    let count = 2;
+	count ++;
+	console.log(count);//3
+	
+	//Декремент --  уменьшает переменную на 1 
+	 let count2 = 2;
+	count2 --;
+	console.log(count2);//1
+	</script>
+<body>
+</body>
+</html>
