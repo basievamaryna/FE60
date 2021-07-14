@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>innerHTML</title>
+</head>
+
+<body>
+	<div id="name-text">Текст <span class="name-text">Имя</span></div>
+	
+	<div class="text1">Текст 2</div>
+	<div class="text2">Текст 3</div>
+</body>
+<script>
+	let test1 = document.getElementById('name-text');
+	test1.style.color = "yellow";
+	
+	let nameText = document.querySelector(".name-text");
+	nameText.innerHTML = "<b>Марина</b>";
+	nameText.style.color = "#333";
+	
+	let text1 = document.querySelector('.text1');
+	text1.innerHTML = '<a href="#">Link Color</a> ';
+	text1.style.color = "red";
+	
+	let text2 = document.querySelector('.text2');
+	text2.innerHTML = "???";
+</script>
+</html>

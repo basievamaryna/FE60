@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Logic Operator</title>
+</head>
+<script>
+	/// ИЛИ || если один операнд истен то будет true
+	
+console.log(true || true);//true
+console.log(false || true);//true
+console.log(true || false);//true
+console.log(false || false);//false
+
+	
+	// И &&  только если два операнда истины только тогда будет true, в противном случае false
+	console.log(true && true);// true
+	console.log(false && true);// false
+	console.log(true && false);// false
+	console.log(false && false);//false
+	
+	/*let hour = 12,
+		minute = 30;
+	if(hour == 12 && minute == 30){
+		alert('время 12 30');
+	}*/
+// ! НЕ  оператор который меняет операнд на обратно с true на false и на оборот
+	
+	console.log(!true);//false
+	console.log(!0);//true
+	
+</script>
+<body>
+</body>
+</html>
