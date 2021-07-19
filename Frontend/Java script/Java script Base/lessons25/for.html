@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>for</title>
+</head>
+<script>
+	/**/
+	/*for(начало; условие; шаг){
+		тело цикла
+	}*/
+	
+	/*for(let i =0; i<5; i++){
+		alert(i);
+	}*/
+	
+	/*let j=0;
+	for(; j<5; j++){
+		alert(j);
+	}*/
+	
+	/*let i=0;
+	for(; i<3; ){
+		alert(i++);
+	}*/
+	//пропускает итерацию в данном случае 4 - итерацию
+	/*for(let i=1; i<= 8; i++ ){
+		if(i==4){
+			continue;
+		}
+		console.log(i);
+	}*/
+	/// for   in  заменяет шаг
+	let data = ['first','two','last'];
+	let user = [
+		{name: "Vasya", lastName: "Pupkin", work: true},
+		{name: "Vasya1", lastName: "Pupkin1", work1: false},
+		{name: "Vasya2", lastName: "Pupkin2", work2: true}
+		
+	];
+	console.log("FOR IN");
+	for(let i in data){
+		console.log(i);
+		console.log(data[i]);
+	}
+	 /*for(let i =1; i<=8; i++){
+		 if(i==4){
+			 break;
+		 }
+		 console.log(i);
+	 }*/
+	
+	// 0 - индекс
+	// first - значение
+	//  Сразу попадает значение а не индекс
+	
+	console.log("FOR OF");
+	for (let i of data){
+		console.log(i);
+	}
+	
+</script>
+<body>
+</body>
+</html>

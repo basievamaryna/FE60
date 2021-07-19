@@ -1,0 +1,222 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	padding: 0;
+	margin: 0;
+}
+html,
+body{
+	
+}
+.for_page{
+	
+}
+.page{
+	
+}
+p{
+	margin-bottom: 20px;
+	
+}
+img{
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+.header{
+	padding: 35px 0;
+	background: url("../img/bg.png") no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+.responsive-nav{
+	display: none;
+}
+.nav-menu ul.sub-menu{
+	 display: flex;
+	list-style: none;
+}
+.nav-menu ul.sub-menu li{
+	
+}
+.nav-menu ul.sub-menu li a{
+	display: block;
+}
+.nav-menu ul.sub-menu li a button{
+	font-family: 'Conv_HelveticaNeueCyr-Roman';
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	padding-right: 18px;
+	transition: 0.7s;
+}
+.nav-menu ul.sub-menu li:last-child a button{
+	padding-right: 0;
+}
+.nav-menu ul.sub-menu li a button:hover{
+	color: #262469;
+}
+
+.nav-menu ul.sub-menu li a button:focus,
+.nav-menu ul.sub-menu li a button{
+	border: none;
+    background-color: inherit;
+    outline: none;
+	cursor: pointer;
+}
+.parent-contact{
+	display: flex;
+}
+.artical{
+	font-family: 'Conv_HelveticaNeueCyr-Roman';
+	font-size: 14px;
+	color: #fff;
+}
+.info-cont{
+	text-align: center;
+	line-height: 17px;
+	margin-left: 15px;
+}
+.info-cont .telephone{
+	font-family: 'Conv_HelveticaNeueCyr-Roman';
+	font-size: 24px;
+	color: #fff;
+	transition: 0.7s;
+}
+.info-cont .telephone:hover{
+	color: #262469;
+	text-decoration: none;
+}
+.info-cont .time-tel{
+	font-family: 'Conv_HelveticaNeueCyr-Light';
+	font-size: 14px;
+	color: #fff;
+}
+.closed{
+	display: none;
+	
+	
+}
+.block2{
+	padding: 30px 0;
+}
+.block2 h1{
+	font-family: 'Conv_HelveticaNeueCyr-Light';
+	text-transform: uppercase;
+	font-size: 36px;
+	color: #ff8600;
+	text-align: center;
+	    max-width: 972px;
+    margin: 0 auto;
+	line-height: 39px;
+	margin-bottom: 35px;
+}
+.bg-lapsharezka{
+	background: url("../img/bg_block2.jpg") no-repeat;
+	padding-bottom: 70px;
+}
+#countdown{
+	    display: flex;
+}
+.countSeconds,
+.countDays,
+.countMinutes,
+.countHours{
+	background: url("../img/count_bg.png") no-repeat;
+	width: 75px;
+    height: 75px;
+    background-size: contain;
+    display: block;
+	text-align: center;
+	    padding-top: 5px;
+}
+#countdown .position{
+	font-family: 'Conv_HelveticaNeueCyr-Light';
+	font-size: 36px;
+	color: #fff;
+	display: inline-block; 
+    height: 47px; 
+    overflow: hidden; 
+     position: relative; 
+     width: 19px;
+}
+.countSeconds p,
+.countDays p,
+.countMinutes p,
+.countHours p{
+	font-family: 'Conv_HelveticaNeueCyr-Light';
+	font-size: 16px;
+	color: #fff;
+	    margin: 0;
+    line-height: 0px;
+     margin-top: -5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* basic style and fonts */
+
+@font-face {
+	font-family: 'Conv_HelveticaNeueCyr-Roman';
+	src: url('../fonts/HelveticaNeueCyr-Roman.eot');
+	src: local('☺'), url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Roman.ttf') format('truetype'), url('../fonts/HelveticaNeueCyr-Roman.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_HelveticaNeueCyr-Light';
+	src: url('../fonts/HelveticaNeueCyr-Light.eot');
+	src: local('☺'), url('../fonts/HelveticaNeueCyr-Light.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Light.ttf') format('truetype'), url('../fonts/HelveticaNeueCyr-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_HelveticaNeueCyr-Medium';
+	src: url('../fonts/HelveticaNeueCyr-Medium.eot');
+	src: local('☺'), url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype'), url('../fonts/HelveticaNeueCyr-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_HelveticaNeueCyr-Bold';
+	src: url('../fonts/HelveticaNeueCyr-Bold.eot');
+	src: local('☺'), url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype'), url('../fonts/HelveticaNeueCyr-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_HelveticaNeueCyr-LightItalic';
+	src: url('../fonts/HelveticaNeueCyr-LightItalic.eot');
+	src: local('☺'), url('../fonts/HelveticaNeueCyr-LightItalic.woff') format('woff'), url('../fonts/HelveticaNeueCyr-LightItalic.ttf') format('truetype'), url('../fonts/HelveticaNeueCyr-LightItalic.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_HelveticaNeueCyr-Italic';
+	src: url('../fonts/HelveticaNeueCyr-Italic.eot');
+	src: local('☺'), url('../fonts/HelveticaNeueCyr-Italic.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Italic.ttf') format('truetype'), url('../fonts/HelveticaNeueCyr-Italic.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_HelveticaNeueCyr-BoldItalic';
+	src: url('../fonts/HelveticaNeueCyr-BoldItalic.eot');
+	src: local('☺'), url('../fonts/HelveticaNeueCyr-BoldItalic.woff') format('woff'), url('../fonts/HelveticaNeueCyr-BoldItalic.ttf') format('truetype'), url('../fonts/HelveticaNeueCyr-BoldItalic.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+

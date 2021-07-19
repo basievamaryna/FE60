@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>do while</title>
+</head>
+<script>
+	/*while(условие цикла){
+		//код
+		// тело цикла
+	}
+	let i = 1;
+	while(i < 3){
+		alert(i);
+		i++;
+	}*/
+	
+	
+/*	do{
+		//telo
+	}while*/
+</script>
+<body>
+	<button onClick="fl()">Нажми на меня</button>
+	<button onClick="fl2()">Нажми на меня</button>
+	<div class="final"></div>
+	<div class="final2"></div>
+</body>
+	
+<script>
+	function fl(){
+		let final;
+		final = document.querySelector(".final");
+		let i = 1;
+		while(i <= 50){
+			final.innerHTML += i + ' ';
+			
+			//i = i + 2;
+			i++;
+		}
+	};
+function fl2(){	
+	let final2;
+		final2 = document.querySelector(".final2");
+	let j = 50;
+	do{
+		final2.innerHTML += j + ' ';
+		j--;
+	}while(j > 0);
+};
+</script>
+</html>
