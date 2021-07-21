@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Associative Arrays</title>
+</head>
+<script>
+	//let arr = [4, 12, "hello"];
+	//console.log(arr[0]);
+	//let newCar ={};
+	/*let car = {
+		"color" : "red",
+		"Speed" : 250,
+		"name car" : "Shkoda"
+	};
+	car.color = "orange";
+	console.log(car.color);
+	console.log(car['name car']);*/
+	//console.log(car.name car);
+	//console.log(car.name);
+</script>
+<body>
+	<div class="param"></div>
+</body>
+	<script>
+		let car = {
+		"color" : "red",
+		"Speed" : 250,
+		"name car" : "Shkoda"
+	    };
+		
+		let param = document.querySelector(".param");
+		
+		for(let key in car){
+			param.innerHTML += key + ":"+ car[key] + "<br />";
+		}
+	</script>
+</html>
