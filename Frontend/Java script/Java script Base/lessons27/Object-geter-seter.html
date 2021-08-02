@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Object geter seter</title>
+</head>
+
+<body>
+	<div id="person"></div>
+	<div id="person2"></div>
+	<div id="person3"></div>
+	<div id="person4"></div>
+	<div id="person5"></div>
+	<div id="person6"></div>
+</body>
+	<script>
+		let person = {
+			name : "Dima",
+			lastName : "Vos",
+			language : "by",
+			get lang(){
+				return this.language;
+			} 
+		};
+		document.getElementById("person").innerHTML = person.lang;
+		
+		let person2 = {
+			name : "Dima",
+			lastName : "Vos",
+			language : "",
+			set lang(lang){
+				this.language = lang;
+			} 
+		};
+		
+		person2.lang = "by";
+		
+		document.getElementById("person2").innerHTML = person2.language;
+		console.log(person2);
+		
+		
+		let person3 = {
+			name : "Dima",
+			lastName : "Vos",
+			fullname: function (){
+				return this.name + " " + this.lastName;
+			}
+		};
+		document.getElementById("person3").innerHTML = person3.fullname;
+		
+		
+		let person4 = {
+			name : "Dima",
+			lastName : "Vos",
+			get fullname (){
+				return this.name + " " + this.lastName;
+			}
+		};
+		console.log(person4.fullname);
+		document.getElementById("person4").innerHTML = person4.fullname;
+		
+		let person5 = {
+			name : "Dima",
+			lastName : "Vos",
+			language : "by",
+			get lang (){
+				return this.language.toUpperCase();
+			}
+		};
+		
+		document.getElementById("person5").innerHTML = person5.lang;
+		
+		
+		let person6 = {
+			name : "Dima",
+			lastName : "Vos",
+			language : "",
+			set lang (lang){
+				this.language = lang.toUpperCase();
+			}
+		};
+		person6.lang = "by";
+		
+		document.getElementById("person6").innerHTML = person6.language;
+		
+//lessons28		
+		let obj = {
+			counter: 0,
+			get reset(){
+				this.counter = 0;
+			},
+			
+			get increment() {
+				this.counter ++;
+			},
+			get decrement() {
+				this.counter --;
+			},
+			set add(value){
+				this.counter += value;
+			},
+			set subtract(value){
+				this.counter -= value;
+			}
+		};
+		
+		obj.reset;
+		obj.add = 5;
+		obj.subtract = 1;
+		obj.increment;
+		obj.decrement;
+		console.log(obj);
+//lessons28		
+	</script>
+</html>

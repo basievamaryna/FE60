@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Object</title>
+</head>
+
+<body>
+</body>
+	<script>
+		//let obj = new Object(); //конструктор объекта
+		let obj2 = {};//литерал объекта  
+		console.log(obj2);
+		
+		const obj = {
+			name : "Maya",
+			"Last Name" : "Tria",
+			age: 30,
+			work: true
+		};
+		
+		
+		/*let obj4 = "name";*/
+		
+		obj.name = "Maryna";
+		obj.lang = 170;
+		delete obj.lang;
+		console.log(obj);
+		console.log(obj.name  + " " + obj["Last Name"] + " " + obj.age + " "  + obj.work /*+ " " + obj.lang */ );
+		
+		/*let obj3 = {
+			name: "Maya",
+			"Last Name" : "Vast",
+			age:30
+		};
+		
+		let win = prompt ("Вы узнаете имя пользователя", "age");
+		alert(obj3[win]);*/
+		
+		let person = {
+		 firstName : "Manya",
+		 lastName: "Verde",
+		 id: 12345544556676,
+		 fullName: function (){
+			return this.firstName + " " + this.lastName;
+		 }
+		};
+		
+		console.log(person);
+		
+		
+	</script>
+</html>
