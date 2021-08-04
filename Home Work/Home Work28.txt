@@ -1,0 +1,13 @@
+firstName : "Maya",
+lastName : "Dos",
+language: " ",
+name: " ",
+name Dog: " Profi"
+
+Добавить свойства с помощью метода в объекте 
+name - nameCat(свойство)
+language - lang(свойство)
+
+nameDog удалить
+
+все это вывести через документ

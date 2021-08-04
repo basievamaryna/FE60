@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>callback function</title>
+</head>
+<style>
+	.error-input{
+		border: solid 2px red;
+	}
+	input{
+		margin-bottom: 10px;
+		padding: 10px;
+	}
+</style>
+<body>
+  <form>
+	<div>
+		<input value="Maryna" id="first-name" />
+	</div>
+	<div>
+		<input value="Basieva" id="last-name" />
+	</div>
+	<div>
+		<input value="Kiev" id="city" />
+	</div>
+	<div>
+		<button id="click-btn">Click Send</button>
+	</div>
+  </form>
+</body>
+	<script>
+		
+		function addErrorClass(elementId){
+			let element = document.getElementById(elementId);
+			element.className = 'error-input';
+		}
+		function addErrorInputs(){
+			addErrorClass('first-name');
+			addErrorClass('last-name');
+			addErrorClass('city');
+		}
+		
+		let sendBtn = document.getElementById('click-btn');
+		sendBtn.addEventListener('click', addErrorInputs);
+		
+		/*function first(){
+			setTimeout(function(){
+				console.log(1);
+			},50);
+			
+		};
+		*/
+		
+		function first(vuzov){
+			console.log(1);
+			 vuzov();
+		};
+		function second(a,b){
+			console.log(a*b);
+		};
+		
+		first(function(){
+			second(3,6);
+		});
+		
+		//first(second(3,6));
+		//second();
+	</script>
+</html>
