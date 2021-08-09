@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Object date</title>
+</head>
+
+<body>
+	<div id="data"></div>
+	<div id="data2"></div>
+	<div id="data3"></div>
+	<div id="data4"></div>
+	<div id="data5"></div>
+	<div id="yearMilliseconds"></div>
+	<div id="yearFull"></div>
+	<div id="yearMonth"></div>
+	<div id="newYearMonthChild"></div>
+</body>
+	<script>
+	/*	let date = new Date();
+		console.log(date);
+		
+		let birthday = new Date("June 16 2018");
+		console.log(birthday);
+		
+		
+		//считаеться с - месяца 0 - 11
+		let b = new Date(2018, 11, 24, 10, 33,30,0);
+		console.log(b);
+		
+		let b2 = new Date(2018, 11, 24, 10);
+		console.log(b2);
+		
+		let b3 = new Date(99, 11, 24);
+		console.log(b3);
+		
+		let data = new Date();
+		document.getElementById("data").innerHTML = data;
+		
+		let data2 = new Date();
+		document.getElementById("data2").innerHTML = data2.toString();
+		
+		let data3 = new Date();
+		document.getElementById("data3").innerHTML = data3.toUTCString();
+		
+		
+		let data4 = new Date();
+		document.getElementById("data4").innerHTML = data4.toDateString();
+		
+		
+		let d = new Date("2021-08-08");
+		console.log(d);
+		
+		let d2 = Date.parse("June 09, 2021");
+		let a = new Date(d2);
+		document.getElementById("data5").innerHTML = d2;*/
+		
+		//методы объекта date
+		//getFullYear() - получить год в формате четырех цифр
+		//getMonth() - Получить номер месяц (0-11)
+		//getDate() - Получить число месяца(1-31)
+		//getHours() - Получить час (0-23)
+		//getMinutes() - получить минуты (0-59)
+		//getSeconds() - Получить секунды (0-59)
+		//getMilliseconds() - Получить миллисекунды (0-999)
+		//getTime() - Получить время (кличество миллисекунд прошедших с 1 января 1970года)
+		//getDay() -  Получить номер дня недели(0-6)
+		
+		
+		
+		let yearMilliseconds = new Date();
+		document.getElementById("yearMilliseconds").innerHTML = yearMilliseconds.getTime();
+		
+		let yearFull = new Date();
+		document.getElementById("yearFull").innerHTML = yearFull.getFullYear();
+		
+		
+		let yearMonth = new Date();
+		document.getElementById("yearMonth").innerHTML = yearMonth.getMonth();
+		
+		let newYearMonth = new Date();
+		let newYearMonthChild = ["Январь", "Февраль", "Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
+		document.getElementById("newYearMonthChild").innerHTML = newYearMonthChild[newYearMonth.getMonth()];
+		
+		
+	</script>
+</html>

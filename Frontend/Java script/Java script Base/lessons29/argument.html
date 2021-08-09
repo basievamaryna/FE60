@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>argument</title>
+</head>
+
+<body>
+</body>
+	<script>
+		//arguments[]
+		/*function one(a,b){
+			console.log(a);
+			console.log(b);
+			console.log(arguments);
+			console.log(arguments[3]);
+		}
+		one(5,7,8,9);*/
+		
+		
+		/*function one(){
+			console.log(arguments);
+			for(let i=0; i<arguments.length; i++){
+				console.log(arguments[i]);
+			}
+		}
+		one(5,7,8,9);*/
+		//ES5
+		/*function one(a){
+			console.log(a);//5
+			arguments[0] = "Nasty";
+			console.log(arguments);//Nasty
+			console.log(a);//Nasty
+		}
+		one(5,7,8,9);*/
+		
+		
+		//ES6
+		/*function one(a){
+			"use strict"
+			console.log(a);//5
+			arguments[0] = "Nasty";
+			console.log(arguments);//Nasty
+			console.log(a);//5
+		}
+		one(5,7,8,9);*/
+		
+		function one(a){
+			"use strict"
+			let b;
+			console.log(a);
+			arguments[0] = "Nasty";
+			console.log(arguments);
+			console.log(a);
+			b = Array.from(arguments);
+			console.log(b);
+		}
+		one(5,7,8,9);
+		
+	</script>
+</html>
