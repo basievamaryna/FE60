@@ -15,6 +15,15 @@
 	<div id="yearFull"></div>
 	<div id="yearMonth"></div>
 	<div id="newYearMonthChild"></div>
+	<div id="date"></div>
+	<div id="dateTime"></div>
+	<div id="Time"></div>
+	<div id="days"></div>
+	
+	<h2>Method Set</h2>
+	<div id="yearSet"></div>
+	<div id="yearSet2"></div>
+	<div id="text"></div>
 </body>
 	<script>
 	/*	let date = new Date();
@@ -81,6 +90,65 @@
 		let newYearMonth = new Date();
 		let newYearMonthChild = ["Январь", "Февраль", "Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
 		document.getElementById("newYearMonthChild").innerHTML = newYearMonthChild[newYearMonth.getMonth()];
+		
+		
+		let date = new Date();
+		document.getElementById("date").innerHTML= date.getDate();
+		
+		let dateTime = new Date();
+		document.getElementById("dateTime").innerHTML = dateTime.getHours() + " : " + dateTime.getMinutes() + " : " + dateTime.getSeconds() + " : " + dateTime.getUTCMilliseconds();
+		
+		let Time = new Date();
+		document.getElementById("Time").innerHTML = Time.getMinutes();
+		
+		let newDays = new Date();
+		let days = ["Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота"];
+		document.getElementById("days").innerHTML = days[newDays.getDay()];
+		
+		
+		
+		/*Методы объекта Date
+		setDate() - установить день (1-31)
+		setFullYear() -установить год можно установить месяц и даже день
+	    setMonth() - установить месяц (0-11)
+		setHours() - установить часы (0-23)
+		setMinutes() - установить минуты (0-59)
+		setSeconds() - установить секунды(0-59)
+		setMilliseconds() - установить миллисекунды (0-999)
+		setTime() - установить время */
+		
+		
+		let yearSet = new Date();
+		yearSet.setFullYear(2020);
+		document.getElementById("yearSet").innerHTML = yearSet;
+		
+		
+		let yearSet2 = new Date();
+		yearSet2.setFullYear(2020, 11, 8);
+		yearSet2.setMonth(10);
+		yearSet2.setDate(7);
+		yearSet2.setHours(20);
+		yearSet2.setMinutes(20);
+		yearSet2.setSeconds(20);
+		document.getElementById("yearSet2").innerHTML = yearSet2;
+		
+		
+		
+		let today, someday, text;
+		today = new Date();
+		someday = new Date();
+		someday.setFullYear(2020, 3, 11);
+		
+		if(someday > today){
+			text = "11 Апреля 2020 год еще не наступил";
+		}else{
+			text = "11 Апреля 2020 год уже прошел";
+		}
+		document.getElementById("text").innerHTML = text;
+		
+		
+		
+		
 		
 		
 	</script>

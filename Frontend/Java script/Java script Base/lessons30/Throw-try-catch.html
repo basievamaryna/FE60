@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Throw try Catch finally</title>
+</head>
+<style>
+	#result{
+		color:red;
+	}
+	#num{
+		margin-top: 80px;
+	}
+</style>
+<body>
+	
+	<p>Введите число от 3 до 15:</p>
+	<input id="myInput" type="text" />
+	<button onClick="myFunction()">Проверяем</button>
+	<div id="result"></div>
+	
+	
+	<div id="num"></div>
+	<div id="errorFull"></div>
+	<div id="errorSyntax"></div>
+	<div id="errType"></div>
+	
+</body>
+	<script>
+		/*try{
+			alertttttt("Добро пожалосать друг!");//проверяем блок кода
+		}catch(err){
+			document.getElementById("error").innerHTML = err.message;// юлок проверки ошибок
+		}*/
+		
+		
+		
+		function myFunction(){
+			let message, x;
+		    message = document.getElementById("result");
+			message.innerHTML = "";
+			x = document.getElementById("myInput").value;
+			try{
+				if(x == "")throw "пусто";
+				if(isNaN(x)) throw "Не число";
+				x = Number(x);
+				if(x<3) throw "слишком мало";
+				if(x>15) throw "слишком много";
+			}
+			catch(err){
+				message.innerHTML = "Вы ввели" + " " +err;
+			}
+		}
+		//RangeError
+		let num = 1;
+		try{
+			num.toPrecision(800);// число не может иметь цифру 800
+		}
+		catch(err){
+			document.getElementById("num").innerHTML = err.name;
+		}
+		
+		
+		//ReferenceError
+		let errorFull;
+		try{
+			errorFull = b+1//нельзя использовать переменную b она не определенна
+		}catch(err){
+			document.getElementById("errorFull").innerHTML = err.name;
+		}
+		
+		//SyntaxError
+		try{
+		   eval("alert('Hello)");
+		}catch(err){
+			document.getElementById("errorSyntax").innerHTML = err.name;
+		}
+		
+		//TypeError
+		let errType = 1;
+		try{
+			errType.toUpperCase();// нельзя перебрасывать число вверхний регистр
+		}
+		catch(err){
+			document.getElementById("errType").innerHTML = err.name;
+		}
+	</script>
+</html>
